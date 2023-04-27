@@ -20,4 +20,4 @@ Plate icon: https://icons8.com/icon/tVAVrrDlITfS/plate
 
 ## Making an Electron Desktop Application
 
-See https://medium.com/@duytq94/bundling-your-react-web-to-a-desktop-app-with-electron-1b19ebcf8933
+See https://medium.com/@duytq94/bundling-your-react-web-to-a-desktop-app-with-electron-1b19ebcf8933 and https://mmazzarolo.com/blog/2021-08-12-building-an-electron-application-using-create-react-app/

@@ -20,7 +20,10 @@ function createWindow() {
     width: 1024,
     height: 1024,
     title: "Empty Your Fridge",
-    logo: "../assets/logo.png"
+    icon: path.join(__dirname,"logo.png"),
+    webPreferences: {
+        nodeIntegration: true,
+    }
   });
   mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`);
   mainWindow.on('closed', function () {
