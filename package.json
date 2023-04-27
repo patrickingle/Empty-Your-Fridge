@@ -1,6 +1,16 @@
 {
   "name": "empty-your-fridge",
   "version": "0.1.0",
+  "author": "@TheBigBookMan",
+  "maintainers": [
+    {
+      "name": "PRESSPAGE ENTERTAINMENT INC dba PINGLEWARE",
+      "email": "maintainers@pingleware.work",
+      "url": "https://support.pingleware.work"
+    }
+  ],
+  "description": "Finds recipes for left over ingredients in your refrigerator",
+  "main": "public/electron.js",
   "private": true,
   "homepage": "https://TheBigBookMan.github.io/Empty-Your-Fridge",
   "dependencies": {
@@ -8,6 +18,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.1.3",
+    "electron-is-dev": "^2.0.0",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -23,7 +34,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "png2icns": "./icns_creator.sh ./assets/logo.png ./assets/logo",
-    "run": "serve -s build"
+    "electron-dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000  && electron .\"",
+    "electron-pack": "electron-builder -c.extraMetadata.main=build/electron.js",
+    "preelectron-pack": "react-scripts build",
+    "electron-start": "electron ."
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +58,11 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.2.4"
+    "concurrently": "^8.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^24.1.3",
+    "electron-builder": "^23.6.0",
+    "tailwindcss": "^3.2.4",
+    "wait-on": "^7.0.1"
   }
 }

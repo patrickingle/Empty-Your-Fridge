@@ -17,3 +17,7 @@ This application allows the user to select basic criteria for a specific type of
 Food API: https://www.edamam.com/
 
 Plate icon: https://icons8.com/icon/tVAVrrDlITfS/plate
+
+## Making an Electron Desktop Application
+
+See https://medium.com/@duytq94/bundling-your-react-web-to-a-desktop-app-with-electron-1b19ebcf8933
