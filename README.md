@@ -21,3 +21,17 @@ Plate icon: https://icons8.com/icon/tVAVrrDlITfS/plate
 ## Making an Electron Desktop Application
 
 See https://medium.com/@duytq94/bundling-your-react-web-to-a-desktop-app-with-electron-1b19ebcf8933 and https://mmazzarolo.com/blog/2021-08-12-building-an-electron-application-using-create-react-app/
+
+## Making a Cordova Application
+
+See https://blog.devgenius.io/convert-your-react-application-to-an-andriod-ios-app-using-cordova-87646729c2b7
+
+First install cordova globally,
+
+    npm install cordova -g
+
+then create a cordova project subdirectory,
+
+    cordova create cordova
+
+then edit the cordova/package.json,
